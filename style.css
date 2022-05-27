@@ -1,0 +1,127 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+/* for ul tag */
+.menu{
+    position: fixed;
+     /* fixed aayi nilkum in left side, (instead of sticky) (here, entire ul) (initially, ul nadukkilaayirunnu, stepByStep aayittu) */
+    background-color: white;
+    width: 100%;
+    margin-top: 0px;
+}
+
+/* for items -- to convert it into inline elements */
+.links{
+    display: inline;
+    /* to display as inline elements (here, items) */
+    padding-left: 50px;
+    padding-right: 50px;
+    /* padding -- for spacing between items */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* for links */
+a{
+    text-decoration: none;
+    /* linkinte underline povan */
+    color: crimson;
+    /* text color */
+    text-shadow: 2px 2px 2px gray;
+    /* to give a shadow effect */
+}
+
+/* PSEUDO CLASSES -- to define special effects to html elements */
+/* syntax:  selector:pseudo-class{property:value}   */
+.links:hover{
+    /* mouse linkNameil vekkumbol, fontSize increase aavanam,, & underlineum varanam */
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+/* scrolling effect */
+html{
+    scroll-behavior: smooth;
+}
+
+
+#welcome{
+    background: linear-gradient(aqua,aquamarine);
+    /* to set ombre effect to background , use linear-gradient (to section:id:welcome )*/
+    color: darkblue;
+    /* color to text -- I Am Sachin Ramesh Tendulkar An Indian former international cricketer */
+}
+
+
+/* sachin's image */
+.profile{
+    border-radius: 50%;
+    margin-top: 50px;
+    /* margin-top -- image kurachu eranghi varan  */
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+        /* font-weight -- bold */
+    font-family: 'Lobster', cursive; 
+}
+
+#name{
+    font-size: 60px;
+    line-height: 1.2;
+        /* line-height -- Sachin Ramesh Tendulkar -- height */
+    font-family: 'Dancing Script', cursive;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+}
+
+#bio{
+    padding: 50px;
+    font-family: 'Smokum', cursive;
+}
+
+/*  <div class="line"></div>   ---  to create a line */
+.line{
+    height: 6px;
+    background-color: darkblue;
+    width: 70px;
+    margin: auto;
+    /*  margin: auto; -- line automatically centerlottu varum */
+}
+
+p{
+    font-size: 20px;
+}
+
+/* DESCENCENT SELECTOR -- writings inte ullil ulla a */
+#writings a{
+    text-shadow: none;
+    text-decoration: underline;
+}
+#writings a:hover{
+    color: darkblue;
+}
+
+
+#contact{
+    background-color: firebrick;
+}
+#contact iframe{
+    width: 100%;
+}
+
+.contact_1 h3{
+    display: inline;
+}
+.contact_1 a{
+    text-shadow: none;
+    color: white;
+}
